@@ -11,6 +11,7 @@ const CryptoContext = ({ children }) => {
     if (currency === "INR") setSymbol("₹");
     else if (currency === "USD") setSymbol("$");
   }, [currency]);
+
   return (
     <Crypto.Provider value={{ currency, symbol, setCurrency }}>
       {children}
@@ -21,5 +22,5 @@ const CryptoContext = ({ children }) => {
 export default CryptoContext;
 
 export const CryptoState = () => {
-  return useContext(CryptoContext);
+  return useContext(Crypto);
 };

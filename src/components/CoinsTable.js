@@ -40,6 +40,20 @@ const useStyles = makeStyles(() => ({
     "& .MuiPaginationItem-root": {
       color: "turquoise",
     },
+    "& .MuiPaginationItem-root.Mui-selected": {
+      background: "turquoise !important",
+      color: "black",
+    },
+    "& .MuiPaginationItem-root.Mui-focusVisible": {
+      outline: "1px solid turquoise",
+      outlineOffset: "1px",
+      background: "none !important",
+    },
+    "& .MuiPaginationItem-root:hover": {
+      outline: "1px solid turquoise",
+      outlineOffset: "1px",
+      background: "none !important",
+    },
   },
 }));
 

@@ -2,7 +2,7 @@ import { makeStyles } from "@mui/styles";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import "./App.css";
 import Header from "./components/Header";
-import Coinpage from "./Pages/Coinpage";
+import CoinPage from "./Pages/CoinPage";
 import Homepage from "./Pages/Homepage";
 
 const useStyles = makeStyles(() => ({
@@ -20,7 +20,7 @@ const App = () => {
         <Header />
         <Routes>
           <Route path="/" element={<Homepage />} />
-          <Route path="/coins/:id" element={<Coinpage />} />
+          <Route path="/coins/:id" element={<CoinPage />} />
         </Routes>
       </div>
     </BrowserRouter>

@@ -7,7 +7,7 @@ import CoinInfo from "../components/CoinInfo";
 import { SingleCoin } from "../config/api";
 import { CryptoState } from "../CryptoContext";
 import { LinearProgress, Typography } from "@mui/material";
-import ReactHtmlParser from "react-html-parser";
+import ReactHtmlParser from "html-react-parser";
 import { numberWithCommas } from "../components/Banner/Carousel";
 
 const useStyles = makeStyles((theme) => ({
